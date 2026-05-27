@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+  <script defer="" src="./Restaurant Page_files/main.js"></script><style>*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-size: 18px;
+}
+
+#content {
+  /* padding: 40px; */
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 20px;
+  font-size: 25px;
+}
+
+button:hover {
+  color: red;
+}
+
+/* home page */
+.home-container {
+  border: 2px red solid;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h2 {
+  font-size: 80px;
+}
+
+.left button {
+  width: 110px;
+  font-size: 20px;
+}
+
+.right img {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+hr {
+  margin: auto;
+  width: 50%;
+}
+
+.home-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-paragraph {
+  width: 50%;
+  text-align: left;
+  margin: 20px auto;
+}
+
+/* menu */
+.menu-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mains-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.menu-img-placeholder {
+  width: 150px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7RUFHRSxVQUFVO0VBQ1YsU0FBUztBQUNYOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osZUFBZTtBQUNqQjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQSxjQUFjO0FBQ2Q7RUFDRSxxQkFBcUI7RUFDckIsWUFBWTtFQUNaLGFBQWE7RUFDYixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1DQUFtQztBQUNyQzs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osZUFBZTtBQUNqQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixhQUFhO0VBQ2Isa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtBQUNuQjs7QUFFQSxTQUFTO0FBQ1Q7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFVBQVU7RUFDVixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLDZCQUE2QjtFQUM3QixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQiwwQkFBMEI7RUFDMUIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7QUFDZiIsInNvdXJjZXNDb250ZW50IjpbIiosXG4qOjphZnRlcixcbio6OmJlZm9yZSB7XG4gIHBhZGRpbmc6IDA7XG4gIG1hcmdpbjogMDtcbn1cblxuYm9keSB7XG4gIGhlaWdodDogMTAwdmg7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuI2NvbnRlbnQge1xuICAvKiBwYWRkaW5nOiA0MHB4OyAqL1xuICBoZWlnaHQ6IDEwMHZoO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGdyYXk7XG59XG5cbi5uYXYtYmFyIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbmJ1dHRvbiB7XG4gIG1hcmdpbjogMjBweDtcbiAgZm9udC1zaXplOiAyNXB4O1xufVxuXG5idXR0b246aG92ZXIge1xuICBjb2xvcjogcmVkO1xufVxuXG4vKiBob21lIHBhZ2UgKi9cbi5ob21lLWNvbnRhaW5lciB7XG4gIGJvcmRlcjogMnB4IHJlZCBzb2xpZDtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwYWRkaW5nOiA0MHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTsgKi9cbn1cblxuLmxlZnQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmxlZnQgaDIge1xuICBmb250LXNpemU6IDgwcHg7XG59XG5cbi5sZWZ0IGJ1dHRvbiB7XG4gIHdpZHRoOiAxMTBweDtcbiAgZm9udC1zaXplOiAyMHB4O1xufVxuXG4ucmlnaHQgaW1nIHtcbiAgd2lkdGg6IDYwMHB4O1xuICBoZWlnaHQ6IDYwMHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5cbmhyIHtcbiAgbWFyZ2luOiBhdXRvO1xuICB3aWR0aDogNTAlO1xufVxuXG4uaG9tZS1oZWFkaW5nIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4uaG9tZS1wYXJhZ3JhcGgge1xuICB3aWR0aDogNTAlO1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuICBtYXJnaW46IDIwcHggYXV0bztcbn1cblxuLyogbWVudSAqL1xuLm1lbnUtcGFnZS1jb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4ubWFpbnMtY29udGFpbmVyIHtcbiAgd2lkdGg6IDUwJTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIGdhcDogMzBweDtcbn1cblxuLml0ZW0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1jb2xvcjogZGFya2dyYXk7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbi5tZW51LWltZy1wbGFjZWhvbGRlciB7XG4gIHdpZHRoOiAxNTBweDtcbiAgaGVpZ2h0OiAyMDBweDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body cz-shortcut-listen="true">
+    <header>
+      <nav class="nav-bar">
+        <button class="home">Home</button>
+        <button class="menu">Menu</button>
+        <button class="contact">Contact</button>
+      </nav>
+    </header>
+    <div id="content"> <div class="menu-page-container"><h2>Our Menu</h2><div class="mains-container"><div class="item"><div><h3>Ribeye Steak</h3><p>Juicy flame-grilled ribeye finished with garlic herb butter.</p><p>£28</p></div><div><img class="menu-img-placeholder" src="./Restaurant Page_files/8dc5e11a51d5a9be3667.jpg"></div></div><div class="item"><div><h3>Filet Mignon</h3><p>Tender beef fillet served with rich red wine jus.</p><p>£34</p></div><div><img class="menu-img-placeholder" src="./Restaurant Page_files/8dc5e11a51d5a9be3667.jpg"></div></div><div class="item"><div><h3>New York Strip</h3><p>Classic steak with bold flavour and simple seasoning.</p><p>£30</p></div><div><img class="menu-img-placeholder" src="./Restaurant Page_files/8dc5e11a51d5a9be3667.jpg"></div></div></div></div></div>
+  
+
+</body></html>
